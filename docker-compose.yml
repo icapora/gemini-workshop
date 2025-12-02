@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  gemini-workshop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gemini-workshop
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.0-flash-exp}
+      - HOST=${HOST:-0.0.0.0}
+      - PORT=${PORT:-8000}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - RELOAD=${RELOAD:-false}
+    env_file:
+      - .env
+    volumes:
+      # Mount code for development (comment out for production)
+      - ./app:/app/app
+      - ./main.py:/app/main.py
+      - ./static:/app/static
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health').read()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - gemini-network
+
+networks:
+  gemini-network:
+    driver: bridge

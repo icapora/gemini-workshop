@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+docs/
+ARCHITECTURE.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# CI/CD
+.github/
+.pre-commit-config.yaml
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Temporary
+tmp/
+temp/
+*.log
+
+# Development
+Pipfile
+Pipfile.lock
+requirements.txt
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Plans
+.claude/
