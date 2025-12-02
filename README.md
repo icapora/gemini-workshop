@@ -8,7 +8,7 @@
 ![Gemini](https://img.shields.io/badge/Google-Gemini%202.0-orange.svg)
 ![Code Style](https://img.shields.io/badge/code%20style-ruff-000000.svg)
 ![Type Checked](https://img.shields.io/badge/type%20checked-mypy-blue.svg)
-[![codecov](https://codecov.io/gh/isaias-alt/gemini-workshop/branch/master/graph/badge.svg)](https://codecov.io/gh/isaias-alt/gemini-workshop)
+[![codecov](https://codecov.io/github/icapora/gemini-workshop/branch/master/graph/badge.svg)](https://codecov.io/github/icapora/gemini-workshop)
 ![UV](https://img.shields.io/badge/deps-uv-green.svg)
 
 **A production-ready, real-time voice conversation application powered by Google's Gemini Live API**
