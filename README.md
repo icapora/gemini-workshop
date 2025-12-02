@@ -46,7 +46,7 @@
 <!-- Add your demo GIF or screenshot here -->
 <div align="center">
 
-![Demo Screenshot]![alt text](images/demo.png)
+![Demo Screenshot](images/demo.png)
 
 *Real-time voice conversation with Gemini AI*
 
