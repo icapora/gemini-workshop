@@ -19,21 +19,19 @@ jobs:
           enable-cache: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+        run: uv python install 3.11
 
       - name: Install dependencies
-        run: uv sync --dev
+        run: uv sync --all-extras --dev
 
       - name: Run Ruff linter
-        run: uv run ruff check .
+        run: uv run python -m ruff check .
 
       - name: Run Ruff formatter check
-        run: uv run ruff format --check .
+        run: uv run python -m ruff format --check .
 
       - name: Run mypy
-        run: uv run mypy app/ main.py || true  # Allow to fail initially
+        run: uv run python -m mypy app/ main.py || true  # Allow to fail initially
 
   test:
     name: Test Suite
@@ -50,12 +48,10 @@ jobs:
           enable-cache: true
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
+        run: uv python install ${{ matrix.python-version }}
 
       - name: Install dependencies
-        run: uv sync --dev
+        run: uv sync --all-extras --dev
 
       - name: Run tests with coverage
         run: uv run pytest --cov --cov-report=xml --cov-report=term
@@ -77,12 +73,10 @@ jobs:
         uses: astral-sh/setup-uv@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+        run: uv python install 3.11
 
       - name: Install dependencies
-        run: uv sync --dev
+        run: uv sync --all-extras --dev
 
       - name: Run Bandit security linter
         run: uv run bandit -r app/ main.py -f json || true
@@ -98,12 +92,10 @@ jobs:
         uses: astral-sh/setup-uv@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+        run: uv python install 3.11
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --all-extras
 
       - name: Validate project structure
         run: |
