@@ -67,8 +67,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gemini-live-workshop.git
-   cd gemini-live-workshop
+   git clone https://github.com/icapora/gemini-workshop.git
+   cd gemini-workshop
    ```
 
 2. **Configure your API key**
@@ -88,8 +88,8 @@ That's it! Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gemini-live-workshop.git
-   cd gemini-live-workshop
+   git clone https://github.com/icapora/gemini-workshop.git
+   cd gemini-workshop
    ```
 
 2. **Install UV** (if not already installed)
@@ -344,7 +344,7 @@ This project follows modern Python best practices with comprehensive testing, ty
 - 🔜 OpenTelemetry tracing
 
 ### Community Requests
-Have an idea? [Open an issue](https://github.com/YOUR_USERNAME/gemini-live-workshop/issues/new) or start a [discussion](https://github.com/YOUR_USERNAME/gemini-live-workshop/discussions)!
+Have an idea? [Open an issue](https://github.com/icapora/gemini-workshop/issues/new) or start a [discussion](https://github.com/icapora/gemini-workshop/discussions)!
 
 ## 🤝 Contributing
 
@@ -354,8 +354,8 @@ Contributions are welcome! We follow modern Python best practices and maintain h
 
 1. **Fork and clone**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gemini-live-workshop.git
-   cd gemini-live-workshop
+   git clone https://github.com/icapora/gemini-workshop.git
+   cd gemini-workshop
    ```
 
 2. **Install dependencies with UV**
@@ -427,8 +427,8 @@ Please **do not** open public issues for security vulnerabilities. Instead:
 ### Getting Help
 
 - 📖 [Documentation](ARCHITECTURE.md) - Detailed architecture and design docs
-- 💬 [Discussions](https://github.com/YOUR_USERNAME/gemini-live-workshop/discussions) - Ask questions and share ideas
-- 🐛 [Issues](https://github.com/YOUR_USERNAME/gemini-live-workshop/issues) - Report bugs or request features
+- 💬 [Discussions](https://github.com/icapora/gemini-workshop/discussions) - Ask questions and share ideas
+- 🐛 [Issues](https://github.com/icapora/gemini-workshop/issues) - Report bugs or request features
 
 ### Stay Updated
 

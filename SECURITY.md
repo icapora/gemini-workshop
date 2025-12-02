@@ -256,8 +256,8 @@ Before merging code, ensure:
 For security-related questions or concerns:
 
 - **Email:** isaias.caporusso@gmail.com
-- **Security Advisories:** [GitHub Security Tab](https://github.com/YOUR_USERNAME/gemini-live-workshop/security)
-- **General Issues:** [GitHub Issues](https://github.com/YOUR_USERNAME/gemini-live-workshop/issues)
+- **Security Advisories:** [GitHub Security Tab](https://github.com/icapora/gemini-workshop/security)
+- **General Issues:** [GitHub Issues](https://github.com/icapora/gemini-workshop/issues)
 
 ## Acknowledgments
 

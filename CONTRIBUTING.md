@@ -32,7 +32,7 @@ We welcome suggestions for enhancements! Please create an issue with:
 2. **Set up your development environment**:
    ```bash
    # Clone your fork
-   git clone https://github.com/YOUR_USERNAME/gemini-workshop.git
+   git clone https://github.com/icapora/gemini-workshop.git
    cd gemini-workshop
 
    # Install dependencies

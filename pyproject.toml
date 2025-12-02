@@ -46,10 +46,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/gemini-live-workshop"
-Documentation = "https://github.com/YOUR_USERNAME/gemini-live-workshop#readme"
-Repository = "https://github.com/YOUR_USERNAME/gemini-live-workshop"
-"Issue Tracker" = "https://github.com/YOUR_USERNAME/gemini-live-workshop/issues"
+Homepage = "https://github.com/icapora/gemini-workshop"
+Documentation = "https://github.com/icapora/gemini-workshop#readme"
+Repository = "https://github.com/icapora/gemini-workshop"
+"Issue Tracker" = "https://github.com/icapora/gemini-workshop/issues"
 
 [build-system]
 requires = ["hatchling"]
