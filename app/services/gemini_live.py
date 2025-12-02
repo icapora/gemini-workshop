@@ -156,9 +156,9 @@ class GeminiLiveService:
                             and server_content.input_transcription
                             and hasattr(server_content.input_transcription, "text")
                         ):
-                            response_data[
-                                "input_transcription"
-                            ] = server_content.input_transcription.text
+                            response_data["input_transcription"] = (
+                                server_content.input_transcription.text
+                            )
 
                         # Output transcription (what the model says)
                         if (
@@ -166,9 +166,9 @@ class GeminiLiveService:
                             and server_content.output_transcription
                             and hasattr(server_content.output_transcription, "text")
                         ):
-                            response_data[
-                                "output_transcription"
-                            ] = server_content.output_transcription.text
+                            response_data["output_transcription"] = (
+                                server_content.output_transcription.text
+                            )
 
                         # Model turn - contains audio and/or text
                         if (
