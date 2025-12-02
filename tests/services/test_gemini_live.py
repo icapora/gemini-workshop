@@ -729,7 +729,7 @@ async def test_receive_responses_empty_response_not_yielded(
                 break
 
         await asyncio.wait_for(collect_responses(), timeout=1.0)
-    except asyncio.TimeoutError:
+    except TimeoutError:
         # Expected - we should timeout because empty response causes
         # the loop to go to next turn which blocks forever
         pass
