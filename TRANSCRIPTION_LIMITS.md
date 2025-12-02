@@ -576,20 +576,20 @@ flushEnabled = false
 The application includes a settings modal accessible via the ⚙️ button:
 
 ```
-┌─────────────────────────────────────┐
-│         Settings Modal              │
-├─────────────────────────────────────┤
-│                                     │
-│  Real-time streaming         [ON]  │
-│  Send audio frames immediately      │
-│                                     │
-│  Periodic flush (15s)        [ON]  │
-│  Prevent degradation in long turns  │
-│                                     │
-│  Side chat panel            [OFF]  │
-│  Toggle chat layout                 │
-│                                     │
-└─────────────────────────────────────┘
+┌───────────────────────────────────────┐
+│           Settings Modal              │
+├───────────────────────────────────────┤
+│                                       │
+│  Real-time streaming           [ON]   │
+│  Send audio frames immediately        │
+│                                       │
+│  Periodic flush (15s)          [ON]   │
+│  Prevent degradation in long turns    │
+│                                       │
+│  Side chat panel              [OFF]   │
+│  Toggle chat layout                   │
+│                                       │
+└───────────────────────────────────────┘
 ```
 
 **Settings are session-based** (not persisted to localStorage). Refresh the page to reset to defaults.
